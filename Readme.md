@@ -35,33 +35,6 @@ It includes **user authentication (JWT)**, secure **password hashing**.
 - SQLite (database)
 - Tesseract OCR (text extraction)
 
----
-
-## 📂 Project Structure
-
-Smart Documnet Assistant/
-├─ Backend/
-│  └─ Smart-Document-Assistant/
-│     ├─ app.py              # Main Flask server (routes/endpoints)
-│     ├─ db.py               # Database setup (SQLite)
-│     ├─ ai_service.py       # AI/OCR logic for extracting text from images
-│     ├─ requirements.txt    # Python dependencies
-│     ├─ venv/               # (Local virtualenv — not needed to commit)
-│     └─ data/               # (Created at runtime) SQLite DB lives here
-└─ frontend/
-   ├─ package.json           # Frontend dependencies & scripts
-   └─ src/
-      ├─ App.js              # Router + auth-guard logic
-      ├─ api.js              # Axios calls to backend
-      ├─ pages/
-      │  ├─ Login.js         # Login page
-      │  ├─ Register.js      # Register page
-      │  └─ Dashboard.js     # Main app after login
-      └─ components/
-         ├─ DocumentUploader.js  # Upload UI (calls /api/upload)
-         └─ DocumentList.js      # List/search/delete/export docs
-
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Backend Setup (Flask)
